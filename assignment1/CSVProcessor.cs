@@ -9,14 +9,14 @@ namespace assignment1
 {
     class CSVProcessor
     {
-        public bool ImportCsv(string pathtoCSVfile, Employee employees)
+        public bool ImportCsv(string pathtoCSVfile, WineItemCollection WIC)
             {
                 //Declare the streamReader
                 StreamReader streamReader = null;
 
             try
             {
-                // declare a string for the line
+                //Declare a string for the line
                 string line;
 
                 //Intanciate the stream reader
@@ -29,7 +29,7 @@ namespace assignment1
                 while ((line = streamReader.ReadLine()) !=null)
                 {
                     //Process the line
-                    processLine(line, employees, counter++);
+                    processLine(line, wineitems, counter++);
                 }
 
                 //Read through the whole file, so we can terurn true.
@@ -47,27 +47,26 @@ namespace assignment1
             }
             finally
             {
-                //if the stream reader was instanciated, make sure it is closed
-                // before exiting the reader
+                //close Streamreader
                 if (streamReader !=null )
                 {
                     streamReader.Close();
                 }
             }
 
-       private void processLine(string line, Employee[] employees, int index)
+       private void processLine(string line, WineItem[] wineitems, int index)
         {
             //declare array of parts that will contain the results of slpitting 
             //the read in string 
             string[] parts = line.Split(',');
 
             //Assign each part to a variable
-            string firstName = parts[0];
-            string lastName = parts[1];
-            decimal salary = decimal.Parse(parts[2]);
+            decimal id = decimal.Parse(parts[2]);
+            string description = parts[0];
+            string pack = parts[1];
 
             //Add a new employee into the array that was passed in.
-            employees[index] = new Employee(firstName, lastName,salary)
+            wineitems[index] = new WineItem(id, description, pack)
         }
 
     }

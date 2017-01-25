@@ -10,6 +10,15 @@ namespace assignment1
     {
         static void Main(string[] args)
         {
+            //Make a new instance of the User Interface class
+            UserInterface ui = new UserInterface();
+
+            //Here is a new employee being created using the default
+            //constructor that we wrote in the WineItem class
+            WineItem myWineItem = new WineItem();
+
+            //Let's make an array to hold a bunch of instances of the Employee class
+            WineItem[] wineitem = new WineItem[4000];
         }
     }
 }
