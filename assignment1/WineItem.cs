@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace assignment1
 {
+
+    /* Name: Dawit Zemariam
+    Class: cis237
+    Date: 1/25/2017
+    */
+
     class WineItem
     {
         //Variable

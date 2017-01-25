@@ -7,6 +7,11 @@ using System.IO;
 
 namespace assignment1
 {
+    /* Name: Dawit Zemariam
+  Class: cis237
+  Date: 1/25/2017
+  */
+
     class CSVProcessor
     {
         public bool ImportCsv(string pathtoCSVfile, WineItemCollection WIC)

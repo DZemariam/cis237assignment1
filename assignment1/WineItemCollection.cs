@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace assignment1
 {
+
+    /* Name: Dawit Zemariam
+  Class: cis237
+  Date: 1/25/2017
+  */
+
     class WineItemCollection
     {
         //Need to set Add command in here
@@ -18,9 +24,9 @@ namespace assignment1
 
     //Need to set Search command in here
     String input = Console.ReadLine();
-        while(input == string pathToCsv = "../WineList.csv" && Addata
+        while(input == string pathToCsv = "../WineList.csv" && Addata;
         {
-          
+          return Information
         }
 
         //Let's make an array to hold a bunch of instances of the WineItem class

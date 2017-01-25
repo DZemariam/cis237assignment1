@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace assignment1
 {
+
+    /* Name: Dawit Zemariam
+  Class: cis237
+  Date: 1/25/2017
+  */
+
     class UserInterface
     {
         //Methods   
@@ -19,8 +25,6 @@ namespace assignment1
             //While the input is not valid re-get the input
             while (input != "1" && input != "2" && input != "3" && input != "4" && input != "5")
             {
-                //Load WIC
-                this.loadcsv();
 
                 //Print Message
                 this.PrintErrorMessage();
@@ -32,16 +36,27 @@ namespace assignment1
                 input = Console.ReadLine();
             }
 
-            //input is 1-5
-
             return Int32.Parse(input);
         }
 
+        //print wines
         public void Output(string outputString);
         {
             Console.WritelLine(outputString);
 
         }
+
+    //Ask for direction
+    private void PrintMenu()
+    {
+        Console.WriteLine("What would you like to do?");
+        Console.WriteLine("1.Load data list");
+        Console.WriteLine("2.Pint List");
+        Console.WriteLine("3.Add to WineItemCollection");
+        Console.WriteLine("4.Seach WineItemCollection");
+        Console.WriteLine("5.Exit");
+    }
+
 
     private void PrintErrorMessage()
     {
