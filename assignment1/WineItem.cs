@@ -15,25 +15,25 @@ namespace assignment1
     class WineItem
     {
         //Variable
-        private decimal id;
+        private string id;
         private string description;
         private string pack;
 
 
         //Properties
-        public decimal id
+        public string Id
         {
             get { return id; }
             set { id = value; }
         }
 
-        public string description
+        public string Description
         {
             get { return description; }
             set { description = value; }
         }
 
-        public string pack
+        public string Pack
         {
             get { return pack; }
             set { pack = value; }
@@ -48,11 +48,11 @@ namespace assignment1
 
         public override string ToString()
         {
-            return id + " " + description + " " + pack.ToString("C");
+            return id + " " + description + " " + pack;
         }
 
         //Constructors
-        public WineItem(decimal id, string description, string pack)
+        public WineItem(string id, string description, string pack)
         {
             this.id = Id;
             this.description = Description;

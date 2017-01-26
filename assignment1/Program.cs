@@ -22,8 +22,7 @@ namespace assignment1
             //Here is a new employee being created using the default
             //constructor that we wrote in the WineItem class
             WineItem myWineItem = new WineItem();
-
-            
+                  
 
             //Instanciate the csvProcessor
             CSVProcessor csvProcessor = new CSVProcessor();

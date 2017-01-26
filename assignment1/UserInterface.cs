@@ -17,7 +17,7 @@ namespace assignment1
         //Methods   
         public int GetUserInput()
         {
-            this.PrintList();
+    
 
             //Get input from user
             String input = Console.ReadLine();
@@ -40,30 +40,30 @@ namespace assignment1
         }
 
         //print wines
-        public void Output(string outputString);
+        public void Output(string outputString)
         {
-            Console.WritelLine(outputString);
+            Console.WriteLine(outputString);
 
         }
 
-    //Ask for direction
-    private void PrintMenu()
-    {
-        Console.WriteLine("What would you like to do?");
-        Console.WriteLine("1.Load data list");
-        Console.WriteLine("2.Pint List");
-        Console.WriteLine("3.Add to WineItemCollection");
-        Console.WriteLine("4.Seach WineItemCollection");
-        Console.WriteLine("5.Exit");
-    }
+        //Ask for direction
+        private void PrintMenu()
+        {
+            Console.WriteLine("What would you like to do?");
+            Console.WriteLine("1.Load data list");
+            Console.WriteLine("2.Pint List");
+            Console.WriteLine("3.Add to WineItemCollection");
+            Console.WriteLine("4.Seach WineItemCollection");
+            Console.WriteLine("5.Exit");
+        }
 
 
-    private void PrintErrorMessage()
-    {
-        Console.WriteLine("That is not valid")
-        Console.WriteLine("Please make a valid choice")
-        Console.WriteLine();
+        private void PrintErrorMessage()
+        {
+            Console.WriteLine("That is not valid");
+            Console.WriteLine("Please make a valid choice");
+            Console.WriteLine();
 
-      }
+        }
     }
 }

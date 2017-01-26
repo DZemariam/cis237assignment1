@@ -19,6 +19,7 @@ namespace assignment1
                 //Declare the streamReader
                 StreamReader streamReader = null;
 
+
             try
             {
                 //Declare a string for the line
@@ -34,7 +35,7 @@ namespace assignment1
                 while ((line = streamReader.ReadLine()) !=null)
                 {
                     //Process the line
-                    processLine(line, wineitems, counter++);
+                    processLine(line, WIC, counter++);
                 }
 
                 //Read through the whole file, so we can terurn true.
